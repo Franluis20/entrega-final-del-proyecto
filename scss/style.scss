@@ -1,0 +1,147 @@
+
+
+@mixin card-text {
+  font-family: $font-familycards;
+  font-size: $font-size0;
+  background: linear-gradient(to bottom, rgb(150, 169, 253), white);
+  
+}
+
+@mixin card-text1{
+  font-family: $font-familycards;
+  font-size:$font-size1; 
+  background: linear-gradient(to bottom, rgb(29, 63, 214), white);
+
+}
+
+$font-familycards:'Open Sans', sans-serif;
+
+$bodycolor:rgb(238, 240, 247);
+
+$font-familybody:'Montserrat', sans-serif; 
+
+$font-size0:15px;
+$font-size1:$font-size0+2px;
+
+
+
+
+
+
+
+
+  
+
+  .Zocalo{
+    margin: 0px;
+    background: linear-gradient(to bottom, rgb(63, 94, 230), white);
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+
+  }
+
+  
+  .Zocalo__redes{
+   
+    
+    
+
+  }
+
+  .Zocalo__direccion{
+    margin:0.7rem;
+    font-weight: 300;
+    text-align: center;
+
+  }
+
+  i{
+      font-size: 2rem;
+      color: rgb(30, 53, 255);
+      margin: 0.2rem;
+
+  }
+
+  body{
+     background-color:$bodycolor;
+     font-family:$font-familybody;
+    
+    
+
+  }
+
+ 
+
+ 
+ 
+  .background{
+    background-color: rgb(82, 82, 248);
+    
+    
+  
+    
+    
+
+  }
+
+
+
+
+.card-text{
+  @include card-text();
+
+
+}
+
+.equipo{
+  display: flex;
+  justify-content: center;
+  .m{
+    margin: 1px;
+    padding: 1px;
+    color: black;
+    
+
+  }
+}
+ 
+
+.card-text1{
+ @include card-text1();
+
+
+
+}
+
+.card-title{
+    
+    background-color:linear-gradient(to bottom, rgb(217, 221, 236), rgb(36, 16, 218)) ;
+}
+
+
+.direccion{
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
